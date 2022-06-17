@@ -119,15 +119,16 @@
     }
     .fonctBox:hover
     {
-        color: #9356DC;
+        color: #FF79DA;
         background-color: #DEEBFF;
     }
     .fonctBoxIconElement
     {
         margin-left: 20px;
     }
-    .fontBoxTitle
+    #fontBoxTitle
     {
+        color: black;
         margin-left: 20px;
         font-size: 18px;
         font-weight: bold;
