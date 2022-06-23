@@ -1,0 +1,75 @@
+@media screen and (max-width: 768px) {    
+    .header
+    {
+        display: flex;
+        border-style: dashed;
+    }
+    .headerIcon
+    {
+        display: flex;
+        align-items: center;
+        border-style: dashed;
+    }
+    .fa-solid.fa-arrow-left
+    {
+        font-size: 24px;
+    }
+    .mainPhoto
+    {
+        width: 100%;
+        margin: 0px;
+    }
+    .menu
+    {
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        margin-top: -50px;
+        background-color: #F2F2F2;
+        position:relative;
+        padding: 15px 15px 0 15px;
+    }
+    .menuHeader
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+    }
+    .menuTitle
+    {
+        font-family: 'Shrikhand', cursive;
+    }
+    .menuIcon
+    {
+        margin-right: 15px;
+    }
+    .menuCard
+    {
+        background-color: white;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        border-radius: 15px;
+        margin: 15px 0 15px 0;
+        padding: 10px 10px 10px 10px;
+        height: 70px;
+        align-items: center;
+    }
+    .menuCardTitle
+    {
+        font-size: 20px;
+        width: 100%;
+        margin: 0;
+    }
+    .menuCardDescription
+    {
+        width: 80%;
+        margin: 0;
+    }
+    .menuCardPrice
+    {
+        width: 10%;
+        margin: 0;
+    }
+}
