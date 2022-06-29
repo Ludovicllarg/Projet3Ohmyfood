@@ -1,10 +1,12 @@
 @media screen and (max-width: 768px) {    
     .headerIcon
     {
-        width: 5%;
         display: flex;
         align-items: center;
-   
+    }
+    #icon
+    {
+        margin-left: -80px;
     }
     .fa-solid.fa-arrow-left
     {
