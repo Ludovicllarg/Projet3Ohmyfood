@@ -1,15 +1,232 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+  background-color: white;
+  height: 60px;
+  margin: 0;
+}
+
+.headerLogo {
+  width: 50%;
+  animation: testloader 2.5s forwards;
+}
+
+@keyframes testloader {
+  0% {
+    transform: rotate(0deg);
+    margin-top: 250px;
+    left: 50%;
+    top: 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.footer {
+  background-color: rgba(0, 0, 0, 0.747);
+  padding: 20px 0 30px 20px;
+  margin-bottom: 0px;
+}
+
+.footerLogo {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer div {
+  margin: 10px 0 0 0;
+}
+
 @media screen and (max-width: 768px) {
-  a {
-    text-decoration: none;
-    color: black;
+  .headerIcon {
+    display: flex;
+    align-items: center;
   }
 
-  body {
-    font-family: "Raleway", sans-serif;
-    margin-left: 0px;
+  #icon {
+    margin-left: -80px;
+  }
+
+  .fa-solid.fa-arrow-left {
+    display: flex;
+    font-size: 24px;
+  }
+
+  .mainPhoto {
+    width: 100%;
+    margin: 0px;
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  .menu {
+    height: 100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -50px;
+    background-color: #F2F2F2;
+    position: relative;
+    padding: 15px 15px 0 15px;
+    margin-bottom: -30px;
+  }
+
+  .menuHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+  }
+
+  .menuTitle {
+    font-family: "Shrikhand", cursive;
+  }
+
+  .menuIcon {
+    display: flex;
+    width: 15%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menuTitleCard::after {
+    content: "";
+    margin-top: 5px;
+    display: block;
+    width: 45px;
+    height: 4px;
+    background: #99E2D0;
+  }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+      margin-top: 40px;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .menuCardGlobal {
+    display: flex;
+    border-radius: 15px;
+    height: 75px;
+    width: 100%;
+    margin: 10px 0 15px 0px;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+    align-content: center;
+    overflow: hidden;
+    animation: fadein 5s forwards;
+  }
+  .menuCardGlobal:hover .menuCardCheck {
     margin-right: 0px;
+    transition: margin-right 0.5s;
+  }
+  .menuCardGlobal:hover .check {
+    transform: rotate(360deg);
   }
 
+  .menuCard {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+
+  .menuCardCheck {
+    background-color: #99E2D0;
+    min-width: 64px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -64px;
+    cursor: pointer;
+  }
+
+  .check {
+    border-radius: 100px;
+    background: #FFF;
+    color: #99E2D0;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    transition: transform 0.5s;
+  }
+  .check .fas.fa-check {
+    margin: 4px;
+  }
+
+  .menuCardTitle {
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    animation: fadein 5s forwards;
+  }
+
+  .menuCardDescription {
+    width: 80%;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    animation: fadein 5s forwards;
+  }
+
+  .menuCardPrice {
+    width: 10%;
+    margin: 0;
+    font-weight: bold;
+    animation: fadein 6s;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #F2F2F2;
+    padding: 0;
+    margin: 0;
+  }
+
+  main {
+    animation: test 0.02s 2500ms both;
+    height: 100%;
+  }
+
+  @keyframes test {
+    0% {
+      visibility: hidden;
+    }
+  }
   .loader {
     position: absolute;
     left: 50%;
@@ -21,8 +238,9 @@
     border: 16px solid #f3f3f3;
     border-radius: 50%;
     border-top: 16px solid #9356DC;
-    -webkit-animation: spin 2000ms linear both;
-    animation: spin 2000ms linear both;
+    background: linear-gradient(#9356DC, #FF79DA, #99E2D0);
+    -webkit-animation: spin 2500ms linear both;
+    animation: spin 2500ms linear both;
   }
 
   @-webkit-keyframes spin {
@@ -42,26 +260,6 @@
       z-index: -1;
     }
   }
-  main {
-    animation: test 0.02s 2000ms both;
-  }
-
-  @keyframes test {
-    0% {
-      visibility: hidden;
-    }
-  }
-  .header {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin: 20px 0 20px 0;
-  }
-
-  .headerLogo {
-    width: 50%;
-  }
-
   .search {
     display: flex;
     width: 100%;
@@ -113,7 +311,7 @@
 
   .searchBouttonForm {
     display: flex;
-    background-color: #9356DC;
+    background: linear-gradient(#FF79DA, #9356DC);
     color: white;
     width: 60%;
     height: 60px;
@@ -126,7 +324,7 @@
 
   .fa-solid.fa-1, .fa-solid.fa-2, .fa-solid.fa-3 {
     display: flex;
-    background-color: rgb(101, 144, 224);
+    background-color: #9356DC;
     border-radius: 50%;
     height: 25px;
     width: 25px;
@@ -160,7 +358,7 @@
     cursor: pointer;
   }
   .fonctBox:hover {
-    color: #FF79DA;
+    color: #9356DC;
     background-color: #DEEBFF;
   }
 
@@ -173,20 +371,6 @@
     margin-left: 20px;
     font-size: 18px;
     font-weight: bold;
-  }
-
-  .fa-solid.fa-heart {
-    visibility: hidden;
-    font-size: 28px;
-    cursor: pointer;
-  }
-
-  .fa-regular.fa-heart {
-    font-size: 28px;
-    cursor: pointer;
-  }
-  .fa-regular.fa-heart:hover {
-    color: #9356DC;
   }
 
   .restaurants {
@@ -220,7 +404,8 @@
 
   .restaurantsCardPhoto {
     width: 100%;
-    height: 200px;
+    max-height: 200px;
+    object-fit: cover;
   }
 
   .restaurantsCardFigcaption {
@@ -247,31 +432,57 @@
     background-color: white;
   }
 
-  .footer {
-    background-color: rgba(0, 0, 0, 0.747);
-    padding: 20px 0 30px 20px;
+  .heartEmpty {
+    position: relative;
+  }
+  .heartEmpty:hover {
+    animation: heartempty 0.5s;
   }
 
-  .footerLogo {
-    font-family: "Shrikhand", cursive;
-    color: white;
-    font-size: 24px;
-    margin-bottom: 30px;
+  .heartFull {
+    position: absolute;
+    opacity: 0;
+    color: #FFF;
+  }
+  .heartFull:hover {
+    animation: heartfull 0.5s forwards;
+  }
+
+  @keyframes heartfull {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      background-image: linear-gradient(100deg, #9356DC, #FF79DA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  @keyframes heartempty {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .restaurantsNew {
+    right: 1px;
+    margin: 20px 45px 0 0;
+    background-color: #99E2D0;
+    color: #1b6150;
+    padding: 10px;
+    position: absolute;
+    font-weight: bold;
   }
 
   .fa-solid.fa-utensils, .fa-solid.fa-handshake-angle {
     color: white;
     width: 7%;
-  }
-
-  .footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  footer div {
-    margin: 10px 0 0 0;
   }
 }
 
