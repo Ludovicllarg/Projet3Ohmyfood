@@ -363,7 +363,7 @@ main {
   margin-left: 20px;
 }
 
-#fontBoxTitle {
+#fonctBoxTitle1, #fonctBoxTitle2, #fonctBoxTitle3 {
   color: black;
   margin-left: 20px;
   font-size: 18px;
@@ -468,7 +468,8 @@ main {
   }
 }
 .restaurantsNew {
-  margin: 20px 45px 0 0;
+  float: right;
+  margin: 20px 45px 0 70%;
   background-color: #99E2D0;
   color: #1b6150;
   padding: 10px;
@@ -476,6 +477,11 @@ main {
   font-weight: bold;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .restaurantsNew {
+    margin: 20px 45px 0 0;
+  }
+}
 @media screen and (min-width: 992px) {
   .header {
     height: 150px;
@@ -483,6 +489,15 @@ main {
 
   .headerLogo {
     height: 100px;
+  }
+
+  .searchForm {
+    background-color: rgb(247, 244, 244);
+    border: none;
+  }
+
+  .searchFormText {
+    background-color: white;
   }
 
   .fonct {
@@ -545,6 +560,20 @@ main {
   .menuCardGlobal {
     width: 30%;
     margin: 10px;
+  }
+
+  .restaurantsNew {
+    float: left;
+    margin: 20px 45px 0 0;
+    background-color: #99E2D0;
+    color: #1b6150;
+    padding: 10px;
+    position: absolute;
+    font-weight: bold;
+  }
+
+  .searchBouttonForm {
+    width: 40%;
   }
 }
 

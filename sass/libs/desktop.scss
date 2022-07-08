@@ -7,6 +7,15 @@
     {
         height: 100px;
     }
+    .searchForm
+    {
+        background-color: rgb(247, 244, 244);
+        border : none;
+    }
+    .searchFormText
+    {
+        background-color: white;
+    }
     .fonct
     {
         display: flex;
@@ -68,5 +77,19 @@
     {
         width: 30%;
         margin: 10px;
+    }
+    .restaurantsNew
+    {
+        float :left;
+        margin: 20px 45px 0 0;
+        background-color: $tertiary;
+        color: #1b6150;
+        padding: 10px;
+        position: absolute;
+        font-weight: bold;
+    }
+    .searchBouttonForm
+    {
+        width: 40%;
     }
 }

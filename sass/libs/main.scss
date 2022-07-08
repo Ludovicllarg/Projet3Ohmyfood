@@ -140,7 +140,7 @@ main
 {
     margin-left: 20px;
 }
-#fontBoxTitle
+#fonctBoxTitle1, #fonctBoxTitle2, #fonctBoxTitle3
 {
     color: black;
     margin-left: 20px;
@@ -252,10 +252,21 @@ main
     }
 }
 .restaurantsNew {
-    margin: 20px 45px 0 0;
+    float:right;
+    margin: 20px 45px 0 70%;
     background-color: $tertiary;
     color: #1b6150;
     padding: 10px;
     position: absolute;
     font-weight: bold;
+
 }
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    .restaurantsNew{
+        margin: 20px 45px 0 0;
+    }
+
+}
+    
+
