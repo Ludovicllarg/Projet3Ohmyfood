@@ -1,0 +1,72 @@
+@media screen and (min-width: 992px){
+    .header 
+    {
+        height: 150px;
+    }
+    .headerLogo
+    {
+        height: 100px;
+    }
+    .fonct
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .fonctTitle
+    {
+        width: 100%;
+    }
+    .fonctBox
+    {
+        width: 30%;
+        margin: 20px 10px 0 10px;
+    }
+    .restaurants
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .restaurantsTitle
+    {
+        width: 100%;
+    }
+    .restaurantsCard
+    {
+        width: 40%;
+        margin: 20px 10px 0 10px;
+    }
+    .footer
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .fa-solid.fa-arrow-left
+    {
+        display: flex;
+        font-size: 50px;
+    }
+    .menu
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .menuTitle
+    {
+        width: 100%;
+    }
+    .menuTitleCard
+    {
+        width: 100%;
+    }
+    .menuCardGlobal
+    {
+        width: 30%;
+        margin: 10px;
+    }
+}
